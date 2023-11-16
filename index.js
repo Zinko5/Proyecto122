@@ -1,5 +1,10 @@
 function verifica(){
-    var usuario= document.getElementById('us').value;
-    var password= document.getElementById('pas').value;
-    alert(usuario+password);
+    
+    let us= document.getElementById('us').value;
+    let pa= document.getElementById('pass').value;
+    if(us!="" && pa!=""){
+        window.location.href= "index2.html";
+    }
+    else
+        alert("Llena todos los campos");
 }
