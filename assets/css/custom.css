@@ -1,3 +1,14 @@
 /*
 Custom Css
 */
+
+.categoria {
+    color: black;
+    text-decoration: none; /* Quitar subrayado predeterminado */
+}
+a:hover {
+  color: black;
+}
+a:active {
+  color: black;
+}
