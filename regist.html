@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="ejem.css">
+    <link rel="stylesheet" href="regist.css">
 </head>
 <body>
     
@@ -14,10 +14,10 @@
         <span><h1>REGISTRATE</h1></span>
 
         <div class="contGo">
-            <div class="text">
+            <div class="text" >
                 <span>Nombre:</span>
             </div>
-            <div class="inp">
+            <div class="inp" id="nom">
                 <input type="text">
             </div>
 
@@ -25,10 +25,10 @@
                 <span>Email:</span>
             </div>
             <div class="inp">
-                <input type="email">
+                <input type="email" id="em">
             </div>
 
-            <div class="text">
+            <div class="text" id="pa">
                 <span>Contraseña:</span>
             </div>
             <div class="inp">
@@ -37,12 +37,12 @@
 
             <div style="font-weight: bold;">
                 <span>¿Ya tienes una cuenta?</span>
-                <a href="ejem.html" style="color: #00ADB5;">Iniciar Sesión</a>
+                <a href="login.html" style="color: #00ADB5;">Iniciar Sesión</a>
             </div>
 
             <div>
-                <button class="button">
-                    <a href="#">Registrarse</a>
+                <button class="button" onclick="verifica()">
+                    <span>Registrarse</span>
                 </button>
             </div>
 
@@ -51,5 +51,6 @@
         </div>
     </div>
 
+    <script src="regist.js"></script>
 </body>
 </html>
