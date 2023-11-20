@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-top {
+    background-color: #393E46;
+    color: #EEEEEE;
+    font-size: 8pt;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 10%;
+}
+
+.info-top > der{
+    display: flex;
+}
+
+.info-top > izq{
+    display: flex;
+}
+
+header {
+    background-color: #222831;
+    color: #00ADB5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 4%;
+}
+
+header > .logo {
+    color: #EEEEEE;
+    font-size: 26pt;
+}
+
+.logo {
+    font-weight: 600; 
+}
+
+a {
+    color: #00ADB5;
+    text-decoration: none;
+}
+
+a:active {
+    color: #00ADB5;
+}
+
+header > .botones {
+    display: flex;
+    gap: 15px;
+}
+
+article {
+    background-color: #EEEEEE;;
+}
+
+footer {
+    background-color: #222831;
+    color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.columna > p {
+    padding: 0;
+    margin: 0;
+}
+
+footer > .columna > .texto-grande {
+    font-size: 18pt;
+}
