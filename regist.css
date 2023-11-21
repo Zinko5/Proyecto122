@@ -68,6 +68,10 @@ a{
 
 @media(max-width: 767px) {
 
+    .contGo{
+        width: 300px;
+    }
+
     .inp{
         width: 100%;
         height: 30px;
