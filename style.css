@@ -27,6 +27,15 @@ body {
     font-size: 10pt;
 }
 
+.info-top > .izq > a:hover {
+    color: #FFFFFF;
+}
+
+.info-top > .der > a:hover {
+    color: #FFFFFF;
+    font-size: 10pt;
+}
+
 .info-top > .der{
     display: flex;
     gap: 18px;
@@ -136,8 +145,16 @@ footer > .info > .columna > .texto-grande {
     font-size: 18pt;
 }
 
+footer > .info > .columna > .logo:hover {
+    color: #00ADB5;
+}
+
 footer > .info > .columna > a {
     color: #EEEEEE;
+}
+
+footer > .info > .columna > a:hover {
+    color: #FFFFFF;
 }
 
 .linea {
@@ -153,7 +170,7 @@ footer > .info > .columna > a {
     }
 
     header {
-        padding: 2% 4%;
+        padding: 26px 4%;
     }
 
     .info-top {
@@ -179,8 +196,8 @@ footer > .info > .columna > a {
         display: none;
     }
 
-    header > .botones {
-        display: none;
+    header {
+        padding: 26px 30px;
     }
 
     footer {
