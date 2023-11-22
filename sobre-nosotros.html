@@ -3,45 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre nosotros</title>
+    <title>Sobre Nosotros</title>
     <!-- Eliminar esta parte, es el bootstrap, hay que reemplazarlo con css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!--  -->
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- El icono de la pagina: -->
+    <link rel="icon" type="image/x-icon" href="ico.png">
     <!-- el estilo CSS: -->
     <link rel="stylesheet" href="style.css">
     <!-- La fuente de texto (roboto): -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <!-- Los iconos (https://fontawesome.com/icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    <script src="script.js"></script>
 </head>
+
 <body>
     <div class="info-top">
         <div class="izq">
-            <a href=""><span class="fa fa-envelope"></span> info@pumba.com</a>
-            <a href=""><span class="fa fa-phone"></span> 010-020-0340</a>
+            <a href="mailto:info@pumba.com" target="_blank"><span class="fa fa-envelope"></span> info@pumba.com</a>
+            <a href="tel:+1230100200340"><span class="fa fa-phone"></span> 010-020-0340</a>
         </div>
         <div class="der">
-            <a href=""><span class="fa-brands fa-facebook"></span></a>
-            <a href=""><span class="fa-brands fa-instagram"></span></a>
-            <a href=""><span class="fa-brands fa-twitter"></span></a>
+            <a href="https://www.facebook.com/" class="fa-brands fa-facebook" target="_blank"></a>
+            <a href="https://www.instagram.com/" class="fa-brands fa-instagram" target="_blank"></a>
+            <a href="https://twitter.com/?lang=es" class="fa-brands fa-twitter" target="_blank"></a>
+            <a href="https://www.tiktok.com/" class="fa-brands fa-tiktok" target="_blank"></a>
         </div>
     </div>
 
-    <header>
+    <header id="header">
         <div class="izq">
-            <a class="logo" href="">Pumba</a>
+            <a class="logo" href="index.html">Pumba</a>
         </div>
-        <div class="mid">
-            <a href="">Inicio</a>
-            <a href="">Acerca de nosotros</a>
-            <a href="">Catálogo</a>
-            <a href="">Contactanos</a>
+        <div class="mid" id="menu">
+            <a href="index.html">Inicio</a>
+            <a href="sobre-nosotros.html">Acerca de nosotros</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="contactanos.html">Contáctanos</a>
         </div>
         <div class="der">
             <a href="" class="fa fa-magnifying-glass"></a>
-            <a href="" class="fa fa-cart-shopping"></a>
-            <a href="" class="fa fa-circle-user"></a>
+            <a href="compra.html" class="fa fa-cart-shopping"></a>
+            <a href="login.html" class="fa fa-circle-user"></a>
+            <a class="fa fa-bars invisible boton-menu" id="boton-menu"></a>
         </div>
     </header>
 
@@ -199,33 +205,34 @@
     <footer>
         <div class="info">
             <div class="columna">
-                <a href="" class="texto-grande logo">Pumba</a>
+                <a href="index.html" class="texto-grande logo">Pumba</a>
                 <div class="linea"></div>
-                <a href=""><span class="fa fa-location-dot"></span> Calle</a>
-                <a href=""><span class="fa fa-phone"></span> 010-020-0340</a>
-                <a href=""><span class="fa fa-envelope"></span> info@pumba.com</a>
+                <a target="_blank" href="https://maps.app.goo.gl/799wcJFusDHFMMah6"><span class="fa fa-location-dot"></span> Ingavi 751</a>
+                <a href="tel:+1230100200340"><span class="fa fa-phone"></span> 010-020-0340</a>
+                <a target="_blank" href="mailto:info@pumba.com"><span class="fa fa-envelope"></span> info@pumba.com</a>
             </div>
             <div class="columna">
                 <p class="texto-grande">Productos</p>
                 <div class="linea"></div>
-                <a href="">Zapatos</a>
-                <a href="">Ropa</a>
-                <a href="">Accesorios</a>
+                <a href="zapatos.html">Zapatos</a>
+                <a href="ropa.html">Ropa</a>
+                <a href="accesorios.html">Accesorios</a>
             </div>
             <div class="columna">
                 <p class="texto-grande">Informacion</p>
                 <div class="linea"></div>
-                <a href="">Inicio</a>
-                <a href="">Acerca de nosotros</a>
-                <a href="">Contactanos</a>
+                <a href="index.html">Inicio</a>
+                <a href="sobre-nosotros.html">Acerca de nosotros</a>
+                <a href="contactanos.html">Contactanos</a>
             </div>
         </div>
 
         <div class="linea"></div>
         <div class="redes">
-            <a href=""><span class="fa-brands fa-facebook"></span></a>
-            <a href=""><span class="fa-brands fa-instagram"></span></a>
-            <a href=""><span class="fa-brands fa-twitter"></span></a>
+            <a href="https://www.facebook.com/" class="fa-brands fa-facebook" target="_blank"></a>
+            <a href="https://www.instagram.com/" class="fa-brands fa-instagram" target="_blank"></a>
+            <a href="https://twitter.com/?lang=es" class="fa-brands fa-twitter" target="_blank"></a>
+            <a href="https://www.tiktok.com/" class="fa-brands fa-tiktok" target="_blank"></a>
         </div>
     </footer>
 </body>
