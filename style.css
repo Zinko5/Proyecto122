@@ -15,6 +15,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 13px 15%;
+    align-items: center;
 }
 
 .info-top > .izq > a {
@@ -23,6 +24,7 @@ body {
 
 .info-top > .der > a {
     color: #EEEEEE;
+    font-size: 10pt;
 }
 
 .info-top > .der{
@@ -48,14 +50,27 @@ header > .izq > .logo {
     font-size: 26pt;
 }
 
+header > .izq > .logo:hover {
+    color: #00ADB5;
+    font-size: 26pt;
+}
+
 header > .mid {
     display: flex;
     gap: 65px;
 }
 
+header > .mid > a:hover{
+    color: #00e9f5;
+}
+
 header > .der {
     display: flex;
     gap: 15px;
+}
+
+header > .der > a:hover{
+    color: #00e9f5;
 }
 
 .logo {
@@ -86,17 +101,23 @@ footer {
     gap: 26px;
 }
 
-footer > .columnas {
+footer > .info {
     display: flex;
     justify-content: space-between;
 }
 
-footer > .info-bot {
-    font-size: 24pt;
+footer > .redes {
+    display: flex;
+    font-size: 30pt;
+    gap: 26px;
 }
 
-footer > .info-bot > a {
+footer > .redes > a {
     color: #EEEEEE;
+}
+
+footer > .redes > a:hover {
+    color: #00ADB5;
 }
 
 .columna {
@@ -111,11 +132,11 @@ p {
     margin: 0;
 }
 
-footer > .columnas > .columna > .texto-grande {
+footer > .info > .columna > .texto-grande {
     font-size: 18pt;
 }
 
-footer > .columnas > .columna > a {
+footer > .info > .columna > a {
     color: #EEEEEE;
 }
 
@@ -173,7 +194,7 @@ footer > .columnas > .columna > a {
         margin: 4px 0;
     }
 
-    .columnas {
+    .info {
         display: flex;
         flex-direction: column;
         gap: 35px;
