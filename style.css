@@ -99,6 +99,14 @@ header > .der > a:hover{
     text-shadow: 0 0 5px #00E9F5;
 }
 
+header > .der > .boton-menu {
+    display: none;
+}
+
+header > .der > .boton-menu:hover {
+    cursor: pointer;
+}
+
 .logo {
     font-weight: 600; 
 }
@@ -257,7 +265,7 @@ footer > .info > .columna > a:hover {
     transform: translate(-50%, -50%);
     border-radius: 25%;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.4s;
 }
 
 .compra:hover {
@@ -295,12 +303,38 @@ footer > .info > .columna > a:hover {
         display: none;
     }
 
+    header {
+        padding: 26px 30px;
+    }
+
+    header > .der > .boton-menu {
+        display: block;
+    }
+
     header > .mid {
         display: none;
     }
 
-    header {
-        padding: 26px 30px;
+    header > .mid.invisible {
+        display: none;
+    }
+
+    header > .mid.visible {
+        background-color: #222831;
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+        top: 100px;
+        left: 0px;
+        right: 0px;
+        padding: 15px 10%;
+        box-shadow: 0 10px 5px #C9C9C9;
+    }
+
+    header.visible {
+        margin-bottom: 60px;
     }
 
     footer {
