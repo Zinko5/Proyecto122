@@ -7,7 +7,7 @@
 Para iluminacion y sombras:
 #414D5E gris para la linea separadora, mas claro que el otro gris
 #FFFFFF blanco puro
-#00E9F5 celeste mas claro que el otro
+#00B6BF celeste mas claro que el otro
 #C9C9C9 gris muy claro
 */
 
@@ -85,8 +85,8 @@ header > .mid {
 }
 
 header > .mid > a:hover{
-    color: #00E9F5;
-    text-shadow: 0 0 5px #00E9F5;
+    color: #00B6BF;
+    text-shadow: 0 0 5px #00B6BF;
 }
 
 header > .der {
@@ -95,8 +95,8 @@ header > .der {
 }
 
 header > .der > a:hover{
-    color: #00E9F5;
-    text-shadow: 0 0 5px #00E9F5;
+    color: #00B6BF;
+    text-shadow: 0 0 5px #00B6BF;
 }
 
 header > .der > .boton-menu {
@@ -270,7 +270,33 @@ footer > .info > .columna > a:hover {
 
 .compra:hover {
     color: #FFFFFF;
-    text-shadow: 0 0 5px #00E9F5;
+    text-shadow: 0 0 5px #00B6BF;
+    box-shadow: 0 0 4px #00B6BF;
+}
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    font-size: 16pt;
+    padding: 0 10%;
+}
+
+.categorias > a{
+    border-radius: 25px;
+    border: 4px solid #00ADB5;
+    display: flex;
+    flex: 1 0 20px;
+    justify-content: center;
+    max-width: 200px;
+    padding: 8px;
+}
+
+.categorias > a:hover{
+    color: #00B6BF;
+    border: 4px solid #00B6BF;
+    box-shadow: 0 0 5px #00B6BF;
 }
 
 @media (max-width: 1300px) {
@@ -294,6 +320,10 @@ footer > .info > .columna > a:hover {
 
     article {
         padding: 10px 100px 80px 100px;
+    }
+
+    .categorias > a{
+        max-width: 100px;
     }
 }
 
@@ -361,5 +391,9 @@ footer > .info > .columna > a:hover {
 
     article {
         padding: 10px 100px 80px 100px;
+    }
+
+    .categorias {
+        gap: 20px;
     }
 }
