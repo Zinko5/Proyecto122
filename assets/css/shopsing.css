@@ -39,8 +39,6 @@ td{
     flex-direction: row;
     justify-content: space-between;
     width: 600px;
-    border: 1;
-    border-color: #222831;
 }
 
 .imag{
@@ -65,15 +63,15 @@ td{
     }
 
     .rect{
-        width: 100%;
-        border: 1;
-        justify-content: center;
+        width: 250px;
+
+        justify-content: space-between;
         border-color: #222831;
     }
 
     .imag{
-        width:  150px;
-        height: 170px;
+        width:  70px;
+        height: 80px;
     }
 
 }
