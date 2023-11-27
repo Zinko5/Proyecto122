@@ -108,7 +108,7 @@ header > .der > .boton-menu:hover {
 }
 
 .logo {
-    font-weight: 600; 
+    font-weight: 800; 
 }
 
 a {
@@ -130,7 +130,7 @@ article{
 
 h1 {
     font-size: 36pt;
-    font-weight: lighter;
+    font-weight: 350;
     margin: 18px 0;
 }
 
