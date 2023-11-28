@@ -404,7 +404,7 @@ footer > .info > .columna > a:hover {
     }
 }
 
-mibody {
+.miBody {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
