@@ -408,7 +408,7 @@ footer > .info > .columna > a:hover {
         font: 1em/1.5 trebuchet ms, verdana, sans-serif;
       }
       
-      #headerCN {
+      #headerCN header {
         margin: 1rem;
         padding: 1em 0;
         border-radius: .5em;
@@ -417,31 +417,31 @@ footer > .info > .columna > a:hover {
         text-align: center;
       }
       
-      #articleCN {
+      #articleCN article {
         overflow: hidden;
         margin: 1rem;
         width: 21em;
         min-width: 15rem;
         border-radius: 1em;
       }
-      #articleCN:nth-of-type(1) {
+      #articleCN article:nth-of-type(1) {
         --c0: #0f414c;
         --c1: #79e9fd;
       }
-      #articleCN:nth-of-type(2) {
+      #articleCN article:nth-of-type(2) {
         --c0: #673a01;
         --c1: #ddac43;
       }
-      #articleCN:nth-of-type(3) {
+      #articleCN article:nth-of-type(3) {
         --c0: #291c52;
         --c1: #bba9ff;
       }
-      #articleCN:nth-of-type(4) {
+      #articleCN article:nth-of-type(4) {
         --c0: #36480c;
         --c1: #b0d65f;
       }
       
-      #h3CN, #sectionCN {
+      #h3CN h3, #sectionCN section {
         display: flex;
         align-items: center;
         overflow: hidden;
