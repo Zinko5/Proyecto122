@@ -398,7 +398,7 @@ footer > .info > .columna > a:hover {
     }
     
 }
-    #divCN {
+    #divCN div {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
