@@ -404,7 +404,7 @@ footer > .info > .columna > a:hover {
     }
 }
 
-body {
+mibody {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -505,10 +505,7 @@ body {
   }
   
   @media (min-width: 34rem) {
-    html {
-      --r: 4rem;
-    }
-  
+    
     miHeader {
       position: relative;
     }
