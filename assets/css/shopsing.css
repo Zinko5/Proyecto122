@@ -1,0 +1,77 @@
+table{
+    border-color: #222831;
+    background-color: #393E46;
+    color: #00ADB5;
+    width: 100%;
+    text-align: center;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+td{
+    width: 1000px;
+}
+
+.catalogo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.ropa{
+    text-align: center;
+}
+
+.tenis{
+
+}
+
+.articulos{
+
+}
+
+.rect{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.imag{
+    width: 200px;
+}
+
+@media(max-width: 1200px) {
+
+    .rect{
+        width: 750px;
+        border: 1;
+        border-color: #222831;
+    }
+
+}
+
+@media(max-width: 777px) {
+
+    td{
+        width: 200px;
+        
+    }
+
+    .rect{
+        width: 250px;
+
+        justify-content: space-between;
+        border-color: #222831;
+    }
+
+    .imag{
+        width:  70px;
+        height: 80px;
+    }
+
+}
