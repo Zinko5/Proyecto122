@@ -414,7 +414,7 @@ footer > .info > .columna > a:hover {
     font: 1em/1.5 trebuchet ms, verdana, sans-serif;
   }
   
-  miHeader {
+  .miHeader {
     margin: 1rem;
     padding: 1em 0;
     border-radius: .5em;
@@ -423,38 +423,38 @@ footer > .info > .columna > a:hover {
     text-align: center;
   }
   
-  miArticulo {
+  .miArticulo {
     overflow: hidden;
     margin: 1rem;
     width: 21em;
     min-width: 15rem;
     border-radius: 1em;
   }
-  miArticulo:nth-of-type(1) {
+  .miArticulo:nth-of-type(1) {
     --c0: #0f414c;
     --c1: #79e9fd;
   }
-  miArticulo:nth-of-type(2) {
+  .miArticulo:nth-of-type(2) {
     --c0: #673a01;
     --c1: #ddac43;
   }
-  miArticulo:nth-of-type(3) {
+  .miArticulo:nth-of-type(3) {
     --c0: #291c52;
     --c1: #bba9ff;
   }
-  miArticulo:nth-of-type(4) {
+  .miArticulo:nth-of-type(4) {
     --c0: #36480c;
     --c1: #b0d65f;
   }
   
-  miH3, miSection {
+  .miH3, .miSection {
     display: flex;
     align-items: center;
     overflow: hidden;
     position: relative;
     padding: 0.5rem;
   }
-  miH3:before, miSection:before {
+  .miH3:before, .miSection:before {
     position: absolute;
     z-index: -1;
     top: calc(var(--j)*1rem + (1 + var(--j))*50% - var(--r));
@@ -465,26 +465,26 @@ footer > .info > .columna > a:hover {
     content: "";
   }
   
-  miH3:before, miSection {
+ .miH3:before, .miSection {
     color: var(--c1);
   }
   
-  miH3 {
+  .miH3 {
     justify-content: center;
     color: #fff;
     font-size: 1.75em;
     text-align: center;
     min-height: var(--r);
   }
-  miH3:before {
+  .miH3:before {
     opacity: 0.65;
   }
   
-  miSection {
+  .miSection {
     justify-content: space-between;
     min-height: calc(var(--r) - 1rem);
   }
-  miSection:before {
+  .miSection:before {
     color: var(--c0);
   }
   
@@ -506,22 +506,22 @@ footer > .info > .columna > a:hover {
   
   @media (min-width: 34rem) {
     
-    miHeader {
+    .miHeader {
       position: relative;
     }
-    miHeader:before, miHeader:after {
+    .miHeader:before, .miHeader:after {
       position: absolute;
       left: 50%;
       content: "";
     }
-    miHeader:before {
+    .miHeader:before {
       top: 100%;
       width: calc(.0625*var(--r));
       height: calc(2*var(--r) + 1rem);
       transform: translate(-50%);
       background: inherit;
     }
-    miHeader:after {
+    .miHeader:after {
       top: calc(3*1rem + 3.125*var(--r));
       border: solid calc(.375*var(--r)) transparent;
       padding: calc(.375*var(--r));
@@ -531,19 +531,19 @@ footer > .info > .columna > a:hover {
       background: #fff padding-box;
     }
   
-    miArticulo {
+    .miArticulo {
       width: 40%;
     }
-    miArticulo:nth-of-type(-n + 2) {
+    .miArticulo:nth-of-type(-n + 2) {
       --j: 1;
     }
-    miArticulo:nth-of-type(odd) {
+    .miArticulo:nth-of-type(odd) {
       --i: 1;
     }
-    miArticulo:nth-of-type(-n + 2) miH3:before, miArticulo:nth-of-type(n + 3) miSection:before {
+    .miArticulo:nth-of-type(-n + 2) .miH3:before, .miArticulo:nth-of-type(n + 3) .miSection:before {
       --r: 0;
     }
-    miArticulo:nth-of-type(-n + 2) miSection, miArticulo:nth-of-type(n + 3) miH3 {
+    .miArticulo:nth-of-type(-n + 2) .miSection, .miArticulo:nth-of-type(n + 3) .miH3 {
       padding-right: calc(.5*(1 + var(--i))*(var(--r) - 1rem) + 0.5rem);
       padding-left: calc(.5*(1 - var(--i))*(var(--r) - 1rem) + 0.5rem);
     }
