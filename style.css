@@ -436,20 +436,20 @@ footer > .info > .columna > a:hover {
     border-radius: 1em;
   }
   miArticulo:nth-of-type(1) {
-    --c0: #040404;
-    --c1: #79e9fd;
+    --c0: var(--gris-claro);
+    --c1: var(--gris-oscuro);
   }
   miArticulo:nth-of-type(2) {
-    --c0: #030303;
-    --c1: #ddac43;
+    --c0: var(--gris-claro);
+    --c1: var(--gris-oscuro);
   }
   miArticulo:nth-of-type(3) {
-    --c0: #291c52;
-    --c1: #0b0b0d;
+    --c0: var(--gris-claro);
+    --c1: var(--gris-oscuro);
   }
   miArticulo:nth-of-type(4) {
-    --c0: #36480c;
-    --c1: #b0d65f;
+    --c0: var(--gris-claro);
+    --c1: var(--gris-oscuro);
   }
   
   miH3, miSection {
