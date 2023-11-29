@@ -24,6 +24,11 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: var(--blanco);
+    --i: -1;
+    --j: -1;
+    --r: 0px;
+    height: 100%;
+    background-blend-mode: luminosity;
 }
 
 a {
@@ -404,14 +409,6 @@ footer > .info > .columna > a:hover {
     }
 }
 
-html {
-    --i: -1;
-    --j: -1;
-    --r: 0px;
-    height: 100%;
-    background: var(--blanco);
-    background-blend-mode: luminosity;
-  }
   .miBody  {
     display: flex;
     flex-wrap: wrap;
