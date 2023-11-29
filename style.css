@@ -1,6 +1,5 @@
-/* Paleta: */
-
 :root {
+    /* Paleta */
     --blanco: #EEEEEE;
     --gris-claro: #393E46;
     --gris-oscuro: #222831;
@@ -11,14 +10,21 @@
     --celeste-iluminacion: #00B6BF;
     --gris-sombras: #C9C9C9;
     --estrella: #C5C544;
-    /*Roboto General*/
-    /*Roboto bold  Logo*/
 
-    /**/
+    /* Tamaños textos */
+    --texto-general: 12pt;
+    --texto-título: 36pt;
+    --texto-enlace: 16pt;
+    --texto-info: 8pt;
+    --texto-grande: 18pt;
+    --texto-logo: 34pt;
+    --redes-chico: 10pt;
+    --redes-grande: 30pt;
 }
 
 * {
     font-family: 'Roboto', sans-serif;
+    /* Roboto Bold para el logo */
 }
 
 body {
@@ -52,7 +58,7 @@ p {
 .info-top {
     background-color: var(--gris-claro);
     color: var(--blanco);
-    font-size: 8pt;
+    font-size: var(--texto-info);
     display: flex;
     justify-content: space-between;
     padding: 13px 15%;
@@ -78,7 +84,7 @@ p {
 }
 
 .info-top > .der {
-    font-size: 10pt;
+    font-size: var(--redes-chico);
 }
 
 header {
@@ -101,7 +107,7 @@ header > * > a {
 
 header > .izq > .logo {
     color: var(--blanco);
-    font-size: 34pt;
+    font-size: var(--texto-logo);
 }
 
 header > .izq > .logo:hover {
@@ -144,11 +150,11 @@ article{
     flex-direction: column;
     padding: 10px 300px 80px 300px;
     color: var(--gris-oscuro);
-    font-size: 12pt;
+    font-size: var(--texto-general);
 }
 
 h1 {
-    font-size: 36pt;
+    font-size: var(--texto-título);
     font-weight: 350;
     margin: 18px 0;
 }
@@ -174,7 +180,7 @@ footer > .info {
 
 footer > .redes {
     display: flex;
-    font-size: 30pt;
+    font-size: var(--redes-grande);
     gap: 26px;
 }
 
@@ -194,7 +200,7 @@ footer > .redes > a:hover {
 }
 
 footer > .info > .columna > .texto-grande {
-    font-size: 18pt;
+    font-size: var(--texto-grande);
 }
 
 footer > .info > .columna > .logo:hover {
@@ -272,7 +278,7 @@ footer > .info > .columna > a:hover {
     background-color: var(--celeste);
     color: #EEEEEE;
     padding: 12px;
-    font-size: 16pt;
+    font-size: var(--texto-enlace);
     position: absolute;
     top: 35%;
     left: 50%;
@@ -293,7 +299,7 @@ footer > .info > .columna > a:hover {
     justify-content: center;
     flex-wrap: wrap;
     gap: 90px;
-    font-size: 16pt;
+    font-size: var(--texto-enlace);
     padding: 0 10%;
 }
 
