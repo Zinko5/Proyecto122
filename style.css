@@ -409,7 +409,7 @@ html {
     --j: -1;
     --r: 0px;
     height: 100%;
-    background: blue;
+    background: var(--blanco);
     background-blend-mode: luminosity;
   }
   .miBody  {
