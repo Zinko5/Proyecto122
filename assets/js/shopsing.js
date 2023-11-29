@@ -16,5 +16,14 @@ function contar(){
     let filas= tab.getElementsByTagName('tbody')[0];
 
     console.log('Nro: '+(filas.children.length-1));
+}
 
+function getName(but){
+    const cad = but.name;
+    const arr = cad.split(" ",2);
+    /*for(let i=0; i<arr.length;i++){
+        console.log(arr[i]);
+    }*/
+    console.log(cad);
+    console.log(arr);
 }

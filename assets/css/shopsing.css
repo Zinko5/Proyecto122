@@ -24,33 +24,67 @@ td{
 
 .ropa{
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .tenis{
-
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .articulos{
-
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .rect{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 600px;
+    width: 1000px;
+    padding-top: 1rem;
 }
 
 .imag{
-    width: 200px;
+    width: 250px;
+}
+
+.botones{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card{
+    
+    display: flex;
+    flex-direction: column;
 }
 
 @media(max-width: 1200px) {
 
+    td{
+        width: 600px;
+        
+    }
+
     .rect{
         width: 750px;
-        border: 1;
+        justify-content: space-between;
         border-color: #222831;
+    }
+
+    .imag{
+        width: 150px;
+        height: 120px;
+    }
+    
+    .botones{
+        width: 150px;
     }
 
 }
@@ -64,7 +98,7 @@ td{
 
     .rect{
         width: 250px;
-
+        
         justify-content: space-between;
         border-color: #222831;
     }
@@ -72,6 +106,11 @@ td{
     .imag{
         width:  70px;
         height: 80px;
+    }
+    
+    .botones{
+        width: 70px;
+        height: 20px;
     }
 
 }
