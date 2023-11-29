@@ -488,19 +488,19 @@ footer > .info > .columna > a:hover {
     color: var(--c0);
   }
   
-  miP {
+  .miP {
     margin-right: 1em;
     font-size: .875em;
   }
   
-  miA {
+  .miA {
     display: inline-block;
     color: inherit;
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
   }
-  miA:after {
+  .miA:after {
     content: " ▶";
   }
   
