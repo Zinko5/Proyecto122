@@ -28,11 +28,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: var(--blanco);
-    --i: -1;
-    --j: -1;
-    --r: 0px;
-    height: 100%;
-    background-blend-mode: luminosity;
 }
 
 a {
