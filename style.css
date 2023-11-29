@@ -500,9 +500,7 @@ footer > .info > .columna > a:hover {
     text-transform: uppercase;
     white-space: nowrap;
   }
-  .miA:after {
-    content: " ▶";
-  }
+  
   
   @media (min-width: 34rem) {
     
