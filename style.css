@@ -439,16 +439,16 @@ html {
     border-radius: 1em;
   }
   miArticulo:nth-of-type(1) {
-    --c0: #0f414c;
+    --c0: #040404;
     --c1: #79e9fd;
   }
   miArticulo:nth-of-type(2) {
-    --c0: #673a01;
+    --c0: #030303;
     --c1: #ddac43;
   }
   miArticulo:nth-of-type(3) {
     --c0: #291c52;
-    --c1: #bba9ff;
+    --c1: #0b0b0d;
   }
   miArticulo:nth-of-type(4) {
     --c0: #36480c;
