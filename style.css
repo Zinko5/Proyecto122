@@ -16,13 +16,13 @@
     --texto-enlace: 16pt;
     --texto-info: 8pt;
     --texto-grande: 18pt;
-    --texto-logo: 34pt;
+    --texto-logo: 34pt; /* Se usa roboto bold */
     --redes-chico: 10pt;
     --redes-grande: 30pt;
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     /* Roboto Bold para el logo */
 }
 
