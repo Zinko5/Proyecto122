@@ -50,6 +50,7 @@ td{
 
 .imag{
     width: 250px;
+    box-shadow: 0px 1px 14px 1px rgba(65,77,94, 1);
 }
 
 .botones{
@@ -57,13 +58,23 @@ td{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 5px;
+    /*box-shadow: 0px 1px 14px 1px rgba(65,77,94, 1);*/
 }
 
 .card{
     
     display: flex;
     flex-direction: column;
+    /*#414D5E plomo*/
 }
+
+.butic{
+    width: 80px;
+    height: 80px;
+}
+
+
 
 @media(max-width: 1200px) {
 
@@ -78,13 +89,24 @@ td{
         border-color: #222831;
     }
 
+    .card{
+        box-shadow: 10px 10px 10px 10px rgba(65, 77, 94, 0.6);
+    }
+
     .imag{
-        width: 150px;
-        height: 120px;
+        width: 120px;
+        height: 125px;
+        box-shadow: 0px 1px 14px 1px rgba(65,77,94, 1);
     }
     
     .botones{
-        width: 150px;
+        width: 120px;
+        /*box-shadow: 0px 1px 14px 1px rgba(65,77,94, 1);*/
+    }
+
+    .butic{
+        width: 50px;
+        height: 50px;
     }
 
 }
@@ -105,11 +127,18 @@ td{
 
     .imag{
         width:  70px;
-        height: 80px;
+        height: 75px;
+        box-shadow: 0px 1px 14px 1px rgba(65,77,94, 1);
     }
     
     .botones{
         width: 70px;
+        height: 20px;
+        /*box-shadow: 0px 1px 14px 1px rgba(65,77,94, 1);*/
+    }
+
+    .butic{
+        width: 20px;
         height: 20px;
     }
 
