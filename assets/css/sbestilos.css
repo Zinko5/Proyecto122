@@ -10,22 +10,22 @@
     --celeste-iluminacion: #00B6BF;
     --gris-sombras: #C9C9C9;
     --estrella: #C5C544;
-
-    /* Tamaños textos */
+    /* Tamaños de texto */
     --texto-general: 12pt;
     --texto-título: 36pt;
     --texto-enlace: 16pt;
     --texto-info: 8pt;
     --texto-grande: 18pt;
-    --texto-logo: 34pt;
+    --texto-logo: 34pt; /* Se usa roboto bold */
     --redes-chico: 10pt;
     --redes-grande: 30pt;
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     /* Roboto Bold para el logo */
 }
+
 body {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
@@ -39,7 +39,6 @@ body {
     background-color: var(--blanco);
 }
 
-
 a {
     text-decoration: none;
 }
@@ -52,10 +51,6 @@ a:active {
 p {
     padding: 0;
     margin: 0;
-    text-align: center;
-    font-size: var(--texto-título);
-    font-weight: 350;
-    margin: 18px 0;
 }
 
 .info-top {
@@ -323,6 +318,38 @@ footer > .info > .columna > a:hover {
     box-shadow: 0 0 5px var(--celeste-iluminacion);
 }
 
+.videos-container {
+    text-align: center;
+    width: 85%;
+    align-items: center;
+    margin: 30px auto 60px;
+    font-size: var(--texto-grande);
+    padding: 20px;
+}
+
+.videos  {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    flex-wrap: wrap;
+}
+
+video {
+    border-radius: 50%;
+    min-height: 250px;
+    min-width: 250px;
+    max-height: 250px;
+    max-width: 250px;
+    object-fit: cover;
+}
+
+.tarjeta-video {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+
 @media (max-width: 1300px) {
 
     header > .mid {
@@ -348,6 +375,17 @@ footer > .info > .columna > a:hover {
 
     .categorias > a{
         max-width: 100px;
+    }
+
+    .videos  {
+        gap: 15px;
+    }
+    
+    video {
+        min-height: 200px;
+        min-width: 200px;
+        max-height: 200px;
+        max-width: 200px;
     }
 }
 
@@ -419,6 +457,10 @@ footer > .info > .columna > a:hover {
 
     .categorias {
         gap: 20px;
+    }
+    .videos  {
+        flex-direction: column;
+        gap: 30px;
     }
 }
 
