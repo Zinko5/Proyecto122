@@ -118,6 +118,7 @@ function contar() {
     let filas = tab.getElementsByTagName('tbody')[0];
 
     console.log('Nro: ' + (filas.children.length - 1));
+    return filas.children.length-1;
 }
 
 function getName(but) {
@@ -128,3 +129,25 @@ function getName(but) {
     }
     //console.log(arr);
 }
+
+document.addEventListener('DOMContentLoaded', ()=> {
+    // Tu código JavaScript aquí
+    const open= document.getElementById('open');
+    const close= document.getElementById('close');
+    const container= document.getElementById('modalcont');
+    open.addEventListener('click', ()=> {
+        let contador= contar();
+        let muestra= document.getElementById('textoaca');
+        if(contador==0){
+            muestra.innerHTML= 'No tienes objetos seleccionados para comprar<br>';
+        }
+        container.classList.add('showv');
+    });
+
+    close.addEventListener('click', ()=>{
+        container.classList.remove('showv');
+    })
+});
+
+
+
