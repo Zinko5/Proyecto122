@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,8 @@
     <!-- el estilo CSS: -->
     <link rel="stylesheet" href="style.css">
     <!-- La fuente de texto (roboto): -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <!-- Los iconos (https://fontawesome.com/icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="script.js"></script>
@@ -59,13 +61,20 @@
                 <div class="modal">
                     <span id="textoaca">
 
-                    </span>
-                    <button id="close">Volver</button>
+                    </span><br>
+
+                    <label>Ingrese el nro. de tarjeta de banco</label>
+                    <input disabled type="number" id="numBanco" min="1000000000000000" max="9999999999999999">
+
+                    <br><br>
+                    <button disabled id="buy" class="botonShop">Comprar</button><br><br>
+
+                    <button id="close" class="botonShop">Volver</button>
                 </div>
             </div>
         </center>
 
-        <div class="tabla" >
+        <div class="tabla">
             <table border="1" id="tablaT" cellspacing="0" cellpadding="5">
                 <tr>
                     <td>Producto</td>
@@ -74,10 +83,10 @@
                 </tr>
             </table>
             <br><br>
-            <center><button id="open">Comprar</button></center>
+            <center><button id="open" class="botonShop">Ir al carrito</button></center>
         </div>
 
-        
+
 
         <div class="catalogo">
             <div class="ropa">
@@ -85,7 +94,7 @@
                 <div class="rect">
                     <div clas="card">
                         <img src="assets/img/ropa/ropa0.png" class="imag">
-                        
+
                         <div class="botones">
                             <button name="Polera Roja 70" style="border: 0;" onclick="add(this)">
                                 <img src="assets/img/iconos/pluss.png" class="butic">
@@ -95,8 +104,8 @@
                             </button>
                         </div>
                     </div>
-                    
-                    <div >
+
+                    <div>
                         <img src="assets/img/ropa/ropa1.png" class="imag">
                         <div class="botones">
                             <button name="Deportivo Negro 250" style="border: 0;" onclick="add(this)">
@@ -108,7 +117,7 @@
                         </div>
                     </div>
 
-                    <div >
+                    <div>
                         <img src="assets/img/ropa/ropa2.png" class="imag">
                         <div class="botones">
                             <button name="Buso Blanco 130" style="border: 0;" onclick="add(this)">
@@ -501,7 +510,7 @@
                 </div>
             </div>
 
-            
+
             <br>
         </div>
     </article>
@@ -511,7 +520,8 @@
             <div class="columna">
                 <a href="index.html" class="texto-grande logo">Pumba</a>
                 <div class="linea"></div>
-                <a target="_blank" href="https://maps.app.goo.gl/799wcJFusDHFMMah6"><span class="fa fa-location-dot"></span> Ingavi 751</a>
+                <a target="_blank" href="https://maps.app.goo.gl/799wcJFusDHFMMah6"><span
+                        class="fa fa-location-dot"></span> Ingavi 751</a>
                 <a href="tel:+1230100200340"><span class="fa fa-phone"></span> 010-020-0340</a>
                 <a target="_blank" href="mailto:info@pumba.com"><span class="fa fa-envelope"></span> info@pumba.com</a>
             </div>
@@ -540,4 +550,5 @@
         </div>
     </footer>
 </body>
+
 </html>

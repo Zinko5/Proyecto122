@@ -63,6 +63,18 @@ td{
     /*box-shadow: 0px 1px 14px 1px rgba(65,77,94, 1);*/
 }
 
+.botonShop{
+    background-color: #00ADB5;
+    color: #393E46;
+    width: 150px;
+    font-size: 15px;
+    padding: 5px 0px 5px 0px;
+}
+
+.botonShop:hover{
+    color: #EEEEEE;
+}
+
 .card{
     
     display: flex;
@@ -76,7 +88,7 @@ td{
 }
 
 .contmodal{
-    
+
     background-color: rgba(0, 0, 0, 0.3);
     align-items: center;
     justify-content: center;
@@ -91,10 +103,17 @@ td{
 
 .showv{
     pointer-events: auto;
+    opacity: 0;
+}
+
+.muestraTarj{
     opacity: 1;
+    pointer-events: none;
+    align-items: center;
 }
 
 .modal{
+    padding: 25px 5px 25px 5px;
     background-color: #FFF;
     width: 600px;
     max-width: 100%;

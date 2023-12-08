@@ -113,12 +113,35 @@ function remove(but) {
 
 }
 
+//cuenta filas
 function contar() {
     let tab = document.getElementById('tablaT');
-    let filas = tab.getElementsByTagName('tbody')[0];
+    let filas = tab.rows.length;
 
-    console.log('Nro: ' + (filas.children.length - 1));
-    return filas.children.length-1;
+    console.log('Nro: ' + (filas));
+    if(filas!=1)
+        return filas;
+    else
+        return filas-1;
+}
+
+//regresa la compra
+function obtenShop(){
+    let compra='<br>';
+    let precio=0;
+    let tblDat = document.getElementById('tablaT');
+
+    let fil = tblDat.rows.length;
+    for (let i = 1; i < fil; i++) {
+        var c1= tblDat.rows[i].cells[0].innerText;
+        var c2= tblDat.rows[i].cells[1].innerText;
+        var c3= tblDat.rows[i].cells[2].innerText;
+        compra+=c1+' &ensp;'+c2+' &ensp;'+c3+'<br>';
+        precio+= parseInt(c2)*parseInt(c3); 
+    }
+
+
+    return compra+'<br>'+'Precio Total: '+precio+'<br>';
 }
 
 function getName(but) {
@@ -134,12 +157,21 @@ document.addEventListener('DOMContentLoaded', ()=> {
     // Tu código JavaScript aquí
     const open= document.getElementById('open');
     const close= document.getElementById('close');
+    const buy= document.getElementById('buy');
     const container= document.getElementById('modalcont');
+    const inpuNum= document.getElementById('numBanco');
     open.addEventListener('click', ()=> {
         let contador= contar();
         let muestra= document.getElementById('textoaca');
         if(contador==0){
-            muestra.innerHTML= 'No tienes objetos seleccionados para comprar<br>';
+            muestra.innerHTML= 'No tienes objetos seleccionados para comprar<br><br>';
+            buy.disabled=true;
+            inpuNum.disabled=true;
+        }
+        else{
+            muestra.innerHTML= obtenShop();
+            buy.disabled=false;
+            inpuNum.disabled=false;
         }
         container.classList.add('showv');
     });
@@ -147,7 +179,27 @@ document.addEventListener('DOMContentLoaded', ()=> {
     close.addEventListener('click', ()=>{
         container.classList.remove('showv');
     })
+
+    buy.addEventListener('click', ()=>{
+        const num= document.getElementById('numBanco').value;
+        console.log(num);
+        if(num!='' && parseFloat(num)!=0 && contDig(num)>15)
+            alert('¡Compra realizada con éxito!');
+        else{
+            alert('Rellena el campo de la tarjeta de crédito/débito para proceder con la compra\n'+
+            '¡Recuerda el número mínimo de dígitos es 16!');
+        }
+    })
 });
+
+function contDig(num){
+    let c=0;
+    while(parseInt(num)!=0){
+        num= parseInt(num)/10;
+        c++;
+    }
+    return c;
+}
 
 
 
