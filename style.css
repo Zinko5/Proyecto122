@@ -314,6 +314,38 @@ footer > .info > .columna > a:hover {
     box-shadow: 0 0 5px var(--celeste-iluminacion);
 }
 
+.videos-container {
+    text-align: center;
+    width: 85%;
+    align-items: center;
+    margin: 30px auto 60px;
+    font-size: var(--texto-grande);
+    padding: 20px;
+}
+
+.videos  {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    flex-wrap: wrap;
+}
+
+video {
+    border-radius: 50%;
+    min-height: 250px;
+    min-width: 250px;
+    max-height: 250px;
+    max-width: 250px;
+    object-fit: cover;
+}
+
+.tarjeta-video {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+
 @media (max-width: 1300px) {
 
     header > .mid {
@@ -339,6 +371,17 @@ footer > .info > .columna > a:hover {
 
     .categorias > a{
         max-width: 100px;
+    }
+
+    .videos  {
+        gap: 15px;
+    }
+    
+    video {
+        min-height: 200px;
+        min-width: 200px;
+        max-height: 200px;
+        max-width: 200px;
     }
 }
 
@@ -410,5 +453,9 @@ footer > .info > .columna > a:hover {
 
     .categorias {
         gap: 20px;
+    }
+    .videos  {
+        flex-direction: column;
+        gap: 30px;
     }
 }
