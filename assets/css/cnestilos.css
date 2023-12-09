@@ -547,7 +547,7 @@ html {
     miHeader:before {
       top: 100%;
       width: calc(.0625*var(--r));
-      height: calc(2*var(--r) + 1rem);
+      height: calc(4*var(--r) + 1rem);
       transform: translate(-50%);
       background: inherit;
     }
