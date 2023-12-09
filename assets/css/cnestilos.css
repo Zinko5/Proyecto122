@@ -34,6 +34,7 @@
 }
 
 body {
+
     margin: 0;
     padding: 0;
     display: flex;
@@ -54,11 +55,11 @@ a:active {
 p {
     padding: 0;
     margin: 0;
-}y
+}
 
 .info-top {
     background-color: var(--gris-claro);
-    color: var(--gris-claro);
+    color: var(--blanco);
     font-size: 8pt;
     display: flex;
     justify-content: space-between;
