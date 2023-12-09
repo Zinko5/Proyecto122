@@ -58,7 +58,7 @@ p {
 
 .info-top {
     background-color: var(--gris-claro);
-    color: var(--blanco);
+    color: var(--gris-claro);
     font-size: 8pt;
     display: flex;
     justify-content: space-between;
