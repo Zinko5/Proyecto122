@@ -55,7 +55,7 @@ td{
 }
 
 .botones{
-    width: 250px;
+    width: 190px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -103,7 +103,7 @@ td{
 
 .showv{
     pointer-events: auto;
-    opacity: 0;
+    opacity: 1;
 }
 
 .muestraTarj{
@@ -125,6 +125,10 @@ td{
 
 
 @media(max-width: 1200px) {
+
+    table{
+        width:800px;
+    }
 
     td{
         width: 600px;
@@ -148,7 +152,7 @@ td{
     }
     
     .botones{
-        width: 120px;
+        width: 110px;
         /*box-shadow: 0px 1px 14px 1px rgba(65,77,94, 1);*/
     }
 
@@ -183,9 +187,19 @@ td{
         text-align: center;
     }
 
+    .botonShop{
+        width: 130px;
+        font-size: 13px;
+        padding: 5px 0px 5px 0px;
+    }
+
 }
 
-@media(max-width: 787px) {
+@media(max-width: 937px) {
+
+    table{
+        width:250px;
+    }
 
     td{
         width: 200px;
@@ -206,7 +220,7 @@ td{
     }
     
     .botones{
-        width: 70px;
+        width: 60px;
         height: 20px;
         /*box-shadow: 0px 1px 14px 1px rgba(65,77,94, 1);*/
     }
@@ -214,6 +228,12 @@ td{
     .butic{
         width: 20px;
         height: 20px;
+    }
+
+    .botonShop{
+        width: 100px;
+        font-size: 10px;
+        padding: 5px 0px 5px 0px;
     }
 
 }
