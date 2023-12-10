@@ -1,0 +1,167 @@
+table{
+    border-color: #222831;
+    background-color: #393E46;
+    color: #00ADB5;
+    width: 100%;
+    text-align: center;
+}
+
+p{
+    font-size: 25px;
+}
+
+th{
+    font-size: 25px;
+}
+
+td{
+    font-size: 25px;
+}
+
+input{
+    font-size: 25px;
+}
+
+label{
+    font-size: 25px;
+}
+
+button{
+    font-size: 25px;
+    background-color: #00ADB5;
+    color: #393E46;
+    width: 150px;
+    padding: 5px 0px 5px 0px;
+}
+
+img{
+    width: 160px;
+    height: 200px;
+}
+
+td{
+    width: 1000px;
+}
+
+.catalogo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.ropa{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.tenis{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.articulos{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.rect{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+    padding-top: 1rem;
+}
+
+.imag{
+    width: 250px;
+    box-shadow: 0px 1px 14px 1px rgba(65,77,94, 1);
+}
+
+.botones{/*eliminar*/
+    width: 250px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5px;
+    /*box-shadow: 0px 1px 14px 1px rgba(65,77,94, 1);*/
+}
+
+.card{
+    
+    display: flex;
+    flex-direction: column;
+    /*#414D5E plomo*/
+}
+
+
+.agregaT{
+    width: 100%;
+}
+
+
+
+@media(max-width: 1200px) {
+
+    td{
+        width: 600px;
+        
+    }
+
+    .rect{
+        width: 750px;
+        justify-content: space-between;
+        border-color: #222831;
+    }
+
+    .card{
+        box-shadow: 10px 10px 10px 10px rgba(65, 77, 94, 0.6);
+    }
+
+    .imag{
+        width: 120px;
+        height: 125px;
+        box-shadow: 0px 1px 14px 1px rgba(65,77,94, 1);
+    }
+    
+
+}
+
+@media(max-width: 787px) {
+
+    table{
+        width: 100%;
+    }
+
+    td{
+        width: 200px;
+        
+    }
+
+    .rect{
+        width: 250px;
+        
+        justify-content: space-between;
+        border-color: #222831;
+    }
+
+    .agregaT{
+        width: 200px;
+    }
+
+    .imag{
+        width:  70px;
+        height: 75px;
+        box-shadow: 0px 1px 14px 1px rgba(65,77,94, 1);
+    }
+    
+
+    .botones{
+        width: 200px;
+    }
+
+}
