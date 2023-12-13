@@ -466,7 +466,7 @@ video {
 
 
 dl {
-  height: 25vh;
+  /* height: 25vh; */
  
   width: 99%;
   align-self: center;
